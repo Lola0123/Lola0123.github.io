@@ -1444,7 +1444,6 @@ html {
     position: relative;
     padding: 12px;
     width: 368px;
-    max-width: 368px;
     flex-grow: 1;
   }
   .pricing-table::before {
@@ -1500,12 +1499,14 @@ html {
     display: flex;
     align-items: center;
     padding: 14px 0;
+    gap: 0 10px 0 0;
   }
   .pricing-table-features li::before {
     content: "";
-    width: 16px;
+    width: 20px;
     height: 12px;
     margin-right: 16px;
+    padding: 0 10px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuNiA2LjRMMS42IDQgMCA1LjYgNS42IDEyIDE2IDEuNiAxNC40IDB6IiBmaWxsPSIjMDJDQkIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
     background-repeat: no-repeat;
   }
