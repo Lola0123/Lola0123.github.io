@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lola</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/src/scrollreveal.min.js"></script>
+    
 </head>
 <body class="is-boxed has-animations" onload="myFunction()">
     <div id="loader" class="body-wrap" style="background-image: url(src/images/loading.gif);"></div>
@@ -33,9 +34,10 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">LOLA</h1>
+	                        <h1 class="hero-title mt-0"><b>LOLA</b></h1>
+                            <h1 class="hero-title mt-0">Worldwide Pet Relocation Services</h1>
 	                        <p class="hero-paragraph">Thinking about getting your pet relocated?<br> We have got you. </p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Explore</a><a class="button" href="#">Get in touch</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="#explore">Explore</a><a class="button" href="#touch">Get in touch</a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -70,10 +72,12 @@
                     <br>
                     <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
                 </div>
+                <br>
             </section>
 
-            <section class="features section">
+            <section class="features section" id="explore">
                 <div class="container">
+                    
 					<div class="features-inner section-inner has-bottom-divider">
                         <div class="features-wrap">
                             <div class="feature text-center is-revealing">
@@ -222,14 +226,14 @@
                 </div>
             </section>
 
-			<section class="cta section">
+			<section class="cta section" id="touch">
 				<div class="container">
 					<div class="cta-inner section-inner">
                         <div>
 
                             <h3 class="section-title mt-0">Ready to get your Pet reunited?</h3>
                             <br>
-                            <p class="text-sm mb-0"><i class="fa fa-phone" aria-hidden="true"></i>+91 9110226673</p>
+                            <p class="text-sm mb-0"><i class="fa fa-phone" aria-hidden="true"></i> +91 9110226673</p>
                             <p class="text-sm mb-0">info@lwprs.com</p>
                         </div>
 						<div class="cta-cta" style="display: flex; flex-direction: column;">
@@ -242,6 +246,7 @@
 
             <section class="features section">
                 <div class="container">
+                    <div class="section-divider"></div>
 					<div class="features-inner section-inner has-bottom-divider">
                         <div class="pricing-header text-center">
                             <h2 class="section-title mt-0">Meet The Team</h2>
@@ -287,8 +292,9 @@
                 </div>
             </section>
 
-            <section class="hero">
+            <section class="hero" id="about-us">
                 <div class="container">
+                    
                     <div class="hero-inner">
 						<div class="hero-figure1 anime-element">
 							<img src="src/images/about.png">
@@ -314,10 +320,86 @@
                 </div>
             </section>
 
+            
+
+            <section class="hero">
+                <div class="container">
+                    <div class="section-divider"></div>
+                    <div class="pricing-header text-center">
+                        <h2 class="section-title mt-0">Testimonials</h2>
+                        <p class="section-paragraph mb-0">What our <b>customers </b>have to say</p>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box">
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                            <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+                          <div class="content">
+                            <div class="info">
+                              <div class="name">Sanchith</div>
+                              <div class="job">Designer | Developer</div>
+                              <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                              </div>
+                            </div>
+                            <div class="image">
+                              <img src="images/profile-1.jpeg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+                          <div class="content">
+                            <div class="info">
+                              <div class="name">Rohan Rajivanath</div>
+                              <div class="job">YouTuber | Blogger</div>
+                              <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                              </div>
+                            </div>
+                            <div class="image">
+                              <img src="images/profile-2.jpeg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+                          <div class="content">
+                            <div class="info">
+                              <div class="name">Shikha Sonam</div>
+                              <div class="job">Freelancer | Advertiser</div>
+                              <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                              </div>
+                            </div>
+                            <div class="image">
+                              <img src="images/profile-3.jpeg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+            </section>
+
         </main>
 
         <footer class="site-footer">
             <div class="container">
+                <div class="section-divider"></div>
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
 						<a href="#">
@@ -326,16 +408,16 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#touch">Contact</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#about-us">About us</a>
                         </li>
                         <li>
-                            <a href="#">FAQ's</a>
+                            <a href="#touch">FAQ's</a>
                         </li>
                         <li>
-                            <a href="#">Support</a>
+                            <a href="#touch">Support</a>
                         </li>
                         
                     </ul>
