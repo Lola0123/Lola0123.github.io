@@ -428,7 +428,6 @@ html {
   .text-light .h4,
   .text-light .h5,
   .text-light .h6 {
-    color: !important;
   }
   .text-sm {
     font-size: 18px;
@@ -1088,6 +1087,12 @@ html {
     justify-content: space-between;
     align-items: center;
   }
+
+  .header-logo-image {
+
+    width: 50%;
+
+  }
   .header-links {
     display: inline-flex;
   }
@@ -1105,7 +1110,7 @@ html {
     line-height: 16px;
     padding: 8px 24px;
   }
-  @media (min-width: 641px) {
+  @media (max-width: 641px) {
     .site-header {
       position: relative;
     }
@@ -1127,6 +1132,17 @@ html {
       -webkit-transform: skewY(-12deg);
       transform: skewY(-12deg);
     }
+
+    .site-header-inner{
+      justify-content: space-around;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    
   }
   .hero {
     text-align: center;
