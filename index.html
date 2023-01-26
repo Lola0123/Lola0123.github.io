@@ -19,12 +19,12 @@
 <body class="is-boxed has-animations" onload="myFunction()">
     
     <div id="loader" class="body-wrap" style="background-image: url(src/images/loading.gif);"></div>
-
     <div class="body-wrap" id="body">
+        <div class="translate"><div class="misc-1"><p>Change Language Here</p><div id="google_translate_element"></div></div></div>
         <header class="site-header">
-            <div class="center translate"><div id="google_translate_element"></div></div>
             <div class="container">
                 <div class="site-header-inner">
+                    
                     <div class="brand header-brand">
                         <h1 class="m-0">
 							<a class="center" href="#">
@@ -33,6 +33,7 @@
                             
                         </h1>
                     </div>
+                    
                 </div>
             </div>
         </header>
@@ -696,7 +697,7 @@
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
         }
         </script>
         
