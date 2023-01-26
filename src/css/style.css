@@ -1142,6 +1142,10 @@ html {
       justify-content: center;
     }
 
+    .translate {
+      justify-content: center;
+    }
+
     
   }
   .hero {
@@ -1799,8 +1803,4 @@ html {
 
 .goog-te-gadget{
   color: transparent !important;
-}
-
-.goog-te-combo{
-
 }
