@@ -1785,3 +1785,22 @@ html {
   justify-content: space-between;
   margin: 0 -20px;
 }
+
+.translate {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goog-logo-link, .goog-logo-link:link {
+  display: none !important;
+}
+
+.goog-te-gadget{
+  color: transparent !important;
+}
+
+.goog-te-combo{
+
+}

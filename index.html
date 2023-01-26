@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en-US" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +11,18 @@
     <link rel="stylesheet" href="src/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="src/js/script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  </script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/src/scrollreveal.min.js"></script>
     
 </head>
 <body class="is-boxed has-animations" onload="myFunction()">
+    
     <div id="loader" class="body-wrap" style="background-image: url(src/images/loading.gif);"></div>
+
     <div class="body-wrap" id="body">
         <header class="site-header">
+            <div class="center translate"><div id="google_translate_element"></div></div>
             <div class="container">
                 <div class="site-header-inner">
                     <div class="brand header-brand">
@@ -25,6 +30,7 @@
 							<a class="center" href="#">
 								<img class="header-logo-image" src="src/images/logo.png" alt="Logo">
                             </a>
+                            
                         </h1>
                     </div>
                 </div>
@@ -32,6 +38,7 @@
         </header>
 
         <main>
+
             <section class="hero">
                 <div class="container">
                     <div class="hero-inner">
@@ -64,20 +71,20 @@
             <br>
             <br>
 
-            <section class="infographic">
+            <section class="infographic has-bottom-divider" >
                 <div class="container">
+                    <h4 class="feature-title mt-24" style="text-align: center;"> America | Europe | Asia | Africa | Australia </h4>
                     <img src="src/images/travel.gif">
                     <h4 class="feature-title mt-24" style="text-align: center;">Relocate your pet safe & sound</h4>
-                    <p class="text-sm mb-0" style="text-align: center;">We help to relocate your pet all around the world with a bespoke experience for
+                    <p lang="en" id="siteContent" class="text-sm mb-0 lang-eng" style="text-align: center;">We help to relocate your pet all around the world with a bespoke experience for
                         you and your pet. Completely safe and secure.
                     </p>
                     <br>
-                    <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
                 </div>
                 <br>
             </section>
 
-            <section class="features section" id="explore">
+            <!-- <section class="features section" id="explore">
                 <div class="container">
                     
 					<div class="features-inner section-inner has-bottom-divider">
@@ -147,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="features section" id="es">
                 <div class="container">
@@ -263,7 +270,6 @@
 
                         <div class="text-center">
 
-                            <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
                         </div>
 
                     </div>
@@ -352,12 +358,20 @@
                                     <h4 class="feature-title mt-24">Air Buddy</h4>
                                 </div>
                             </div>
+
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="src/images/as-9.png" alt="as-9">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Charter Flights</h4>
+                                </div>
+                            </div>
                             
                         </div>
 
                         <div class="text-center">
 
-                            <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
                         </div>
 
                     </div>
@@ -439,7 +453,6 @@
                                     </div>
                                     <br>
                                     <div class="pricing-table-cta mb-8">
-                                        <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
                                     </div>
                                 </div>
                             </div>
@@ -457,12 +470,10 @@
 
                             <h3 class="section-title mt-0">Ready to get your Pet reunited?</h3>
                             <br>
-                            <p class="text-sm mb-0"><i class="fa fa-phone" aria-hidden="true"></i> +91 9110226673</p>
                             <p class="text-sm mb-0">info@lwprs.com</p>
                         </div>
 						<div class="cta-cta" style="display: flex; flex-direction: column;">
 							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
-                            <button data-tf-popup="wIb29khX" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Lola - Get In Touch" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#077AE7;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get Quote</button><script src="//embed.typeform.com/next/embed.js"></script>
 						</div>
 					</div>
 				</div>
@@ -525,6 +536,10 @@
 						</div>
                         <div class="hero-copy">
 	                        <h1 class="hero-title mt-0">About LOLA</h1>
+                            <h4 class="feature-title mt-24"> Moto & Vision </h4>
+
+                            <p><strong>Its not just relocating...Its an emotion</strong></p>
+
 	                        <p class="hero-paragraph">Welcome to Lola Worldwide Pet Relocation Services, our enterprise offers bespoke end to end services 
                                 for all Relocation requirements for Pet parents with their furry companions be it Dog/Cat. 
                                 Our Motto and Vision … Its not about Relocating... Its an Emotion !!! 
@@ -626,7 +641,7 @@
                 <div class="section-divider"></div>
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
-						<a href="#">
+						<a class="center" href="#">
 							<img class="header-logo-image" src="src/images/logo.png" alt="Logo" width="120px">
 						</a>
                     </div>
@@ -677,7 +692,16 @@
         </footer>
     </div>
 
-    <script>
+    
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         var myVar;
         
         function myFunction() {
@@ -690,10 +714,10 @@
         }
 
         function gototab(reload)
-   {
-    window.location.hash = '#loader';
-    window.location.reload(true);
- }
+        {
+        window.location.hash = '#loader';
+        window.location.reload(true);
+            }
     </script>
     <script src="src/js/main.min.js"></script>
 </body>
