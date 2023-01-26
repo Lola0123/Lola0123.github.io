@@ -1645,7 +1645,7 @@ html {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 48px;
+    padding-top: 0px;
     padding-bottom: 48px;
   }
   .footer-brand,
@@ -1680,7 +1680,7 @@ html {
     }
     .site-footer-inner {
       justify-content: space-between;
-      padding-top: 64px;
+      padding-top: 0px;
       padding-bottom: 64px;
     }
     .footer-brand,
@@ -1828,4 +1828,29 @@ html {
 
 .strong {
   color: #0679e5;
+}
+
+.seals {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.seals img {
+  width: 15%;
+}
+
+@media (max-width: 641px) {
+  .seals {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .seals img {
+    width: 80%;
+    padding-bottom: 20px;
+  }
 }
