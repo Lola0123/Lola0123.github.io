@@ -2019,3 +2019,7 @@ html {
 .gal-btn {
   text-align: center;
 }
+
+#loader {
+  background-image: url(src/images/loading.gif);
+}
