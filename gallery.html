@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lola</title>
+    <link rel="icon" href="src/images/icon.png" type="image/png">
+    <meta name="description" content="Lola - Worldwide Pet Relocation Services">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="src/js/script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  </script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/src/scrollreveal.min.js"></script>
+    
+</head>
+<body class="is-boxed has-animations" onload="myFunction()">
+    
+    <div id="loader" class="body-wrap" style="background-image: url(src/images/loading.gif);"></div>
+    <div class="body-wrap" id="body">
+        <div class="translate"><div class="misc-1"><p>Change Language Here</p><div class="center" id="google_translate_element"></div></div></div>
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a class="center" href="#">
+								<img class="header-logo-image" src="src/images/logo.png" alt="Logo">
+                            </a>
+                            
+                        </h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                
+                <div class="site-footer-inner">
+                    <div class="seals">
+                        <img src="src/images/seal-1.png">
+                        <img src="src/images/seal-2.png">
+                        <img src="src/images/seal-3.png">
+                    </div>
+                    <div class="brand footer-brand">
+						<a class="center" href="#">
+							<img class="header-logo-image" src="src/images/logo.png" alt="Logo" width="120px">
+						</a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#touch">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About us</a>
+                        </li>
+                        <li>
+                            <a href="#touch">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#touch">Support</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text" target="_blank">Instagram</span>
+                                <i class="fa fa-instagram strong" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/919845247914" target="_blank">
+                                <span class="screen-reader-text">Whatsapp</span>
+                                <i class="fa fa-whatsapp strong" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text" target="_blank">Google</span>
+                                <i class="fa fa-google strong" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2023 Lola, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("body").style.display = "block";
+        }
+
+        function gototab(reload)
+        {
+        window.location.hash = '#loader';
+        window.location.reload(true);
+            }
+    </script>
+    <script src="src/js/main.min.js"></script>
+</body>
+</html>
