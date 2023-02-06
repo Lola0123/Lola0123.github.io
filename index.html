@@ -567,11 +567,11 @@
             <section class="hero ">
                 <div class="container has-bottom-divider">
                     <div class="pricing-header text-center">
-                        <h2 class="section-title mt-0">Testimonials</h2>
+                        <h2 class="section-title mt-0" id="testimonial">Testimonials</h2>
                         <p class="section-paragraph mb-0">What our <b>customers </b>have to say</p>
                     </div>
-                    <!-- <div class="wrapper">
-                        <div class="box">
+                    <div class="wrapper">
+                        <!-- <div class="box">
                             <i class="fa fa-paw" aria-hidden="true"></i>
                             <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
                           <div class="content">
@@ -590,28 +590,51 @@
                               <img src="images/profile-1.jpeg" alt="">
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="box">
                             <i class="fa fa-paw" aria-hidden="true"></i>
-                          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+                          <p> Our family recently moved back to South Africa 🇿🇦 from Bangalore, India 🇮🇳. 
+                            We knew our move back would not be complete without our cat, Tickles. On searching for a company 
+                            to help with this task we were recommended Lola Worldwide Pet Relocation. We couldn't have made 
+                            a better decision. Nikhil and Priya and their team worked very hard in helping this become a 
+                            reality.  We are very grateful for their superb communication, methodical assistance and 
+                            continued updates for any of our queries,helping her be reunited with us, her family without any 
+                            stress or worries. Thank you Nikhil ,Priya and team. We would definitely recommend them to our 
+                            friends. </p>
                           <div class="content">
                             <div class="info">
-                              <div class="name">Rohan Rajivanath</div>
-                              <div class="job">YouTuber | Blogger</div>
+                              <div class="name">Janine and Shaun Edward Gordon Ricketts.</div>
+                              <div class="job">
+
+                                <div id="light">
+                                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                    <video id="VisaChipCardVideo" width="300" controls>
+                                        <source src="src/videos/testimonial video.mp4" type="video/mp4">
+                                        <!--Browser does not support <video> tag -->
+                                      </video>
+                                  </div>
+                                  
+                                  <div id="fade" onClick="lightbox_close();"></div>
+                                  
+                                  <div>
+                                    <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
+                                  </div>
+
+                              </div>
                               <div class="stars">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" ></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                               </div>
                             </div>
                             <div class="image">
-                              <img src="images/profile-2.jpeg" alt="">
+                              <img src="src/testimonials/testimonial1.png" alt="">
                             </div>
                           </div>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <i class="fa fa-paw" aria-hidden="true"></i>
                           <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
                           <div class="content">
@@ -630,11 +653,11 @@
                               <img src="images/profile-3.jpeg" alt="">
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                       <br>
 
-                </div> -->
+                </div>
             </section>
 
             <section class="hero ">
@@ -742,6 +765,31 @@
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <script>
+
+        window.document.onkeydown = function(e) {
+        if (!e) {
+            e = event;
+        }
+        if (e.keyCode == 27) {
+            lightbox_close();
+        }
+        }
+
+        function lightbox_open() {
+        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+        window.scrollTo(0, 0);
+        document.getElementById('light').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+        lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+        document.getElementById('light').style.display = 'none';
+        document.getElementById('fade').style.display = 'none';
+        lightBoxVideo.pause();
+        }
+
             let slideIndex = 0;
             showSlides();
 
