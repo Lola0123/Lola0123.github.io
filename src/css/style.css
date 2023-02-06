@@ -1741,6 +1741,13 @@ html {
     justify-content: space-between;
     padding-top: 10px;
   }
+
+  @media (max-width: 641px) {
+    .wrapper .box .content {
+      justify-content: space-around !important;
+    }
+  }
+
   .box .info .name{
     font-weight: 600;
     font-size: 17px;
@@ -2024,6 +2031,12 @@ html {
   background-image: url(src/images/loading.gif);
 }
 
+@media (max-width: 641px) {
+  #loader {
+    background-image: url(src/images/loading-portrait.gif) !important;
+  }
+}
+
 #fade {
   display: none;
   position: fixed;
@@ -2042,10 +2055,10 @@ html {
   display: none;
   position: absolute;
   top: 50%;
-  left: 50%;
+  /* left: 50%; */
   max-width: 600px;
   max-height: 360px;
-  margin-left: -300px;
+  /* margin-left: -300px; */
   margin-top: -180px;
   border: 2px solid #FFF;
   background: #FFF;
