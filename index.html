@@ -593,48 +593,48 @@
                         </div> -->
                         <div class="box">
                           <i class="fa fa-paw" aria-hidden="true"></i>
-                        <p> Our family recently moved back to South Africa 🇿🇦 from Bangalore, India 🇮🇳. 
-                          We knew our move back would not be complete without our cat, Tickles. On searching for a company 
-                          to help with this task we were recommended Lola Worldwide Pet Relocation. We couldn't have made 
-                          a better decision. Nikhil and Priya and their team worked very hard in helping this become a 
-                          reality.  We are very grateful for their superb communication, methodical assistance and 
-                          continued updates for any of our queries,helping her be reunited with us, her family without any 
-                          stress or worries. Thank you Nikhil ,Priya and team. We would definitely recommend them to our 
-                          friends. </p>
-                        <div class="content">
-                          <div class="info">
-                            <div class="name">Janine and Shaun Edward Gordon Ricketts.</div>
-                            <div class="job">
-
-                              <div id="light">
-                                  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                                  <video id="VisaChipCardVideo" width="300" controls>
-                                      <source src="src/videos/testimonial video.mp4" type="video/mp4">
-                                      <!--Browser does not support <video> tag -->
-                                    </video>
+                          <p> Our family recently moved back to South Africa 🇿🇦 from Bangalore, India 🇮🇳. 
+                              We knew our move back would not be complete without our cat, Tickles. On searching for a company 
+                              to help with this task we were recommended Lola Worldwide Pet Relocation. We couldn't have made 
+                              a better decision. Nikhil and Priya and their team worked very hard in helping this become a 
+                              reality.  We are very grateful for their superb communication, methodical assistance, and 
+                              continued updates for any of our queries, helping her be reunited with us, her family without any 
+                              stress or worries. Thank you Nikhil, Priya, and team. We would definitely recommend them to our 
+                              friends. 
+                          </p>
+                          <div class="content">
+                              <div class="info">
+                                  <div class="name">Janine and Shaun Edward Gordon Ricketts.</div>
+                                  <div class="job">
+                                      <div id="light">
+                                          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                          <!-- Modified the video container with a wrapper -->
+                                          <div class="video-wrapper">
+                                              <video id="VisaChipCardVideo" width="640" height="360" controls>
+                                                  <source src="src/videos/testimonial video.mp4" type="video/mp4">
+                                                  <!-- Browser does not support <video> tag -->
+                                              </video>
+                                          </div>
+                                      </div>
+                                      <div id="fade" onClick="lightbox_close();"></div>
+                                      <div>
+                                          <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
+                                      </div>
+                                  </div>
+                                  <div class="stars">
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                  </div>
                               </div>
-                                
-                                <div id="fade" onClick="lightbox_close();"></div>
-                                
-                                <div>
-                                  <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
-                                </div>
-
-                            </div>
-                            <div class="stars">
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" ></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                            </div>
+                              <div class="image">
+                                  <img src="src/testimonials/testimonial1.png" alt="">
+                              </div>
                           </div>
-                          <div class="image">
-                            <img src="src/testimonials/testimonial1.png" alt="">
-                          </div>
-                        </div>
                       </div>
-
+                      
                         <div class="box">
                             <i class="fa fa-paw" aria-hidden="true"></i>
                           <p> Thank you Priya, Nikhil and the crew at “Lola Worldwide Pet Relocation” for all your help with Stella, we wouldn't have been able to do it without you. Stella arrived at London safely with not a worry in the world. I was worried about her flying that distance but you guys have done a wonderful job at making sure everything went smoothly. If you are looking for an experienced team of specialists for relocation for your pet with tons of care look no further. Happy to recommend Lola Worldwide.
@@ -1001,8 +1001,6 @@
                 </div>
             </section>
 
-
-
             <section class="hero ">
                 <div class="container has-bottom-divider">
 
@@ -1072,22 +1070,50 @@
                 </div>
             </section>
 
-            <video width="740" height="400" controls>
-              <source src="src/slideshow/vid1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-
-          <video width="640" height="400" controls>
-            <source src="src/slideshow/vid2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>            
+            <style>
+              /* Create a container for the videos and center its content */
+              .video-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center; /* Vertically center the videos if needed */
+                  flex-wrap: wrap; /* Allow videos to wrap to the next row on smaller screens */
+                  gap: 70px; /* Add some spacing between videos */
+              }
+          
+              /* Style the videos if needed */
+              .video-container video {
+                  max-width: 100%; /* Make videos responsive by scaling to fit their container */
+                  height: auto; /* Maintain the video's aspect ratio */
+              }
+          
+              /* Adjust styles for smaller screens */
+              @media (max-width: 768px) {
+                  .video-container video {
+                      width: 100%; /* Full width on screens up to 768px */
+                      max-width: none; /* Remove max-width to use full available width */
+                  }
+              }
+          </style>
+          
+          <div class="video-container">
+              <video controls>
+                  <source src="src/slideshow/vid1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          
+              <video controls>
+                  <source src="src/slideshow/vid2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+                    
         </main>
         
 
         <style>
           /* Add margin or padding above the site footer */
           .site-footer {
-              margin-top: 50px; /* You can adjust the value to control the spacing */
+              margin-top: 100px; /* You can adjust the value to control the spacing */
               /* or */
               /* padding-top: 20px; */
           }

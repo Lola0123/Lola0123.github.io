@@ -1742,6 +1742,7 @@ html {
     justify-content: space-between;
     padding-top: 10px;
   }
+  
 
   @media (max-width: 641px) {
     .wrapper .box .content {
