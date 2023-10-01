@@ -592,48 +592,48 @@
                           </div>
                         </div> -->
                         <div class="box">
-                          <i class="fa fa-paw" aria-hidden="true"></i>
-                          <p> Our family recently moved back to South Africa 🇿🇦 from Bangalore, India 🇮🇳. 
-                              We knew our move back would not be complete without our cat, Tickles. On searching for a company 
-                              to help with this task we were recommended Lola Worldwide Pet Relocation. We couldn't have made 
-                              a better decision. Nikhil and Priya and their team worked very hard in helping this become a 
-                              reality.  We are very grateful for their superb communication, methodical assistance, and 
-                              continued updates for any of our queries, helping her be reunited with us, her family without any 
-                              stress or worries. Thank you Nikhil, Priya, and team. We would definitely recommend them to our 
-                              friends. 
-                          </p>
-                          <div class="content">
-                              <div class="info">
-                                  <div class="name">Janine and Shaun Edward Gordon Ricketts.</div>
-                                  <div class="job">
-                                      <div id="light">
-                                          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                                          <!-- Modified the video container with a wrapper -->
-                                          <div class="video-wrapper">
-                                              <video id="VisaChipCardVideo" width="640" height="360" controls>
-                                                  <source src="src/videos/testimonial video.mp4" type="video/mp4">
-                                                  <!-- Browser does not support <video> tag -->
-                                              </video>
-                                          </div>
-                                      </div>
-                                      <div id="fade" onClick="lightbox_close();"></div>
-                                      <div>
-                                          <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
-                                      </div>
-                                  </div>
-                                  <div class="stars">
-                                      <i class="fa fa-star" aria-hidden="true"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                      <i class="fa fa-star"></i>
-                                  </div>
-                              </div>
-                              <div class="image">
-                                  <img src="src/testimonials/testimonial1.png" alt="">
-                              </div>
-                          </div>
-                      </div>
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                            <p> Our family recently moved back to South Africa 🇿🇦 from Bangalore, India 🇮🇳. 
+                                We knew our move back would not be complete without our cat, Tickles. On searching for a company 
+                                to help with this task, we were recommended Lola Worldwide Pet Relocation. We couldn't have made 
+                                a better decision. Nikhil and Priya and their team worked very hard in helping this become a 
+                                reality.  We are very grateful for their superb communication, methodical assistance, and 
+                                continued updates for any of our queries, helping her be reunited with us, her family without any 
+                                stress or worries. Thank you Nikhil, Priya, and team. We would definitely recommend them to our 
+                                friends. 
+                            </p>
+                            <div class="content">
+                                <div class="info">
+                                    <div class="name">Janine and Shaun Edward Gordon Ricketts.</div>
+                                    <div class="job">
+                                        <div id="light">
+                                            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                            <!-- Modified the video container with a wrapper -->
+                                            <div class="video-wrapper">
+                                                <video id="VisaChipCardVideo" width="640" height="360" controls autoplay onplay="goFullScreen()" onpause="exitFullScreen()">
+                                                    <source src="src/videos/testimonial video.mp4" type="video/mp4">
+                                                    <!-- Browser does not support <video> tag -->
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <div id="fade" onClick="lightbox_close();"></div>
+                                        <div>
+                                            <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
+                                        </div>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="src/testimonials/testimonial1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                       
                         <div class="box">
                             <i class="fa fa-paw" aria-hidden="true"></i>
@@ -1210,6 +1210,32 @@
       }
       }
 
+      function goFullScreen() {
+        var video = document.getElementById("VisaChipCardVideo");
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { // Firefox
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { // IE/Edge
+            video.msRequestFullscreen();
+        }
+    }
+
+    function exitFullScreen() {
+        var video = document.getElementById("VisaChipCardVideo");
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) { // Firefox
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { // IE/Edge
+            document.msExitFullscreen();
+        }
+        video.pause(); // Pause the video when exiting full-screen mode
+    }
       function lightbox_open() {
       var lightBoxVideo = document.getElementById("VisaChipCardVideo");
       window.scrollTo(0, 0);
