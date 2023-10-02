@@ -618,9 +618,23 @@
                                         </div>
                                         <div id="fade" onClick="lightbox_close();"></div>
                                         <div>
-                                            <a href="#testimonial" onclick="lightbox_open();">Watch video</a>
+                                            <!-- <a href="#testimonial" onclick="lightbox_open();">Watch video</a> -->
                                         </div>
                                     </div>
+                                    
+
+                                    <!-- Exp  -->
+
+                                    <a  id="openPopup">Watch Video</a>
+
+                                    <div id="videoPopup" class="popup">
+                                        <div class="popup-content">
+                                            <iframe src="src/videos/testimonial video.mp4" frameborder="0" allowfullscreen allow="autoplay" ></iframe>
+                                            <a  id="closePopup">Close</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- end -->
                                     <div class="stars">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star"></i>
@@ -1285,5 +1299,26 @@
           }
   </script>
   <script src="src/js/main.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const openPopup = document.getElementById("openPopup");
+    const closePopup = document.getElementById("closePopup");
+    const videoPopup = document.getElementById("videoPopup");
+
+    openPopup.addEventListener("click", function (e) {
+        e.preventDefault();
+        videoPopup.style.display = "block";
+        document.body.style.overflow = "hidden"; // Disable scrolling
+    });
+
+    closePopup.addEventListener("click", function (e) {
+        e.preventDefault();
+        videoPopup.style.display = "none";
+        document.body.style.overflow = "auto"; // Enable scrolling
+    });
+});
+
+  </script>
 </body>
 </html>
